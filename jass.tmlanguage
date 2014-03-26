@@ -101,6 +101,10 @@
 					<key>include</key>
 					<string>#interpolation</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#escaped_char</string>
+				</dict>
 			</array>
 		</dict>
 		<dict>
@@ -218,6 +222,32 @@
 			<string>support.function.native.jass</string>
 		</dict>
 	</array>
+	<key>repository</key>
+	<dict>
+		<key>escaped_char</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>constant.character.escape.newline.jass</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.character.escape.backslash.jass</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>constant.character.escape.double-quote.jass</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\\\n)|(\\\\)|(\\\")</string>
+		</dict>
+	</dict>
 	<key>scopeName</key>
 	<string>source.jass</string>
 	<key>uuid</key>
